@@ -1,12 +1,5 @@
-<script type="text/javascript">
-  var pathArray = window.location.pathname.split('/');
-  var newPathname = "";
-for (i = 0; i < pathArray.length; i++) {
-  newPathname += "/";
-  newPathname += pathArray[i];
-  
-  alert(newPathname);
-}
-</script>
+<?php
+$id = $_GET['email'];
+echo $id;
 
-
+?>
