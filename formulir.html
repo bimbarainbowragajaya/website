@@ -1,8 +1,10 @@
 <p id="demo"></p>
 <p id="demo1"></p>
+<p id="demo2"></p>
 <script>
   var newURL = window.location.protocol + "/" + window.location.host + "/" + window.location.pathname + window.location.search
   var pathArray = window.location.pathname.split('/');
+  var pathArray2 =  window.location.search.split('=');
   var secondLevelLocation = pathArray[0];
   var newPathname = "";
 for (i = 0; i < window.location.search; i++) {
@@ -13,4 +15,5 @@ for (i = 0; i < window.location.search; i++) {
   document.getElementById("demo1").innerHTML = newURL;
   
 document.getElementById("demo").innerHTML = pathArray;
+document.getElementById("demo2").innerHTML = pathArray2;
 </script>
