@@ -1,5 +1,13 @@
 <p id="demo"></p>
 <script>
   var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
-document.getElementById("demo").innerHTML = newURL;
+  var pathArray = window.location.pathname.split('/');
+  var secondLevelLocation = pathArray[0];
+  var newPathname = "";
+for (i = 0; i < pathArray.length; i++) {
+  newPathname += "/";
+  newPathname += pathArray[i];
+}
+  
+document.getElementById("demo").innerHTML = pathArray;
 </script>
