@@ -1,9 +1,12 @@
 <script type="text/javascript">
-  alert("This alert box was called with the onload event");
   var pathArray = window.location.pathname.split('/');
   var newPathname = "";
 for (i = 0; i < pathArray.length; i++) {
   newPathname += "/";
   newPathname += pathArray[i];
+  
+  alert(newPathname);
 }
 </script>
+
+
