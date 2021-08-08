@@ -1,15 +1,16 @@
 <p id="demo"></p>
+<p id="demo1"></p>
 <script>
-  var newURL = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname + window.location.search
+  var newURL = window.location.protocol + "/" + window.location.host + "/" + window.location.pathname + window.location.search
   var pathArray = window.location.pathname.split('/');
   var secondLevelLocation = pathArray[0];
   var newPathname = "";
-for (i = 0; i < pathArray.length; i++) {
-  newPathname += "/";
+for (i = 0; i < window.location.search; i++) {
+  newPathname += "&";
   newPathname += pathArray[i];
-  document.getElementById("demo").innerHTML = newPathname;
-</script>
+  
 }
+  document.getElementById("demo1").innerHTML = newPathname;
   
 document.getElementById("demo").innerHTML = pathArray;
 </script>
