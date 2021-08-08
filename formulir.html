@@ -1,3 +1,5 @@
 <?php
-echo "Study " . $_GET['nama_ortu'] . " at " . $_GET['email'];
+if (isset($_GET['email'])) {
+	var_dump($_GET['email']);
+}
 ?>
