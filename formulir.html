@@ -8,7 +8,7 @@
   var pathArray = window.location.pathname.split('/');
   var pathArray2 =  window.location.search.split('=');
   var pathArray3 =  window.location.search.split('&');
-  var pathArray4 =  pathArray3.split('=');
+  var pathArray4 =  pathArray3[0].split('=');
   var secondLevelLocation = pathArray[0];
   var newPathname = "";
 for (i = 0; i < window.location.search; i++) {
