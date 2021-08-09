@@ -1,25 +1,12 @@
-<p id="demo"></p>
-<p id="demo1"></p>
-<p id="demo2"></p>
-<p id="demo3"></p>
-<p id="demo4"></p>
+<p id="NamaOrtu"></p>
+<p id="NamaAnak"></p>
 <script>
   var newURL = window.location.protocol + "/" + window.location.host + "/" + window.location.pathname + window.location.search
-  var pathArray = window.location.pathname.split('/');
-  var pathArray2 =  window.location.search.split('=');
-  var pathArray3 =  window.location.search.split('&');
-  var pathArray4 =  pathArray3[0].split('=');
-  var secondLevelLocation = pathArray[0];
-  var newPathname = "";
-for (i = 0; i < window.location.search; i++) {
-  newPathname += "&";
-  newPathname += pathArray[i];
-  
-}
+  var pathArray =  window.location.search.split('&');
+  var NamaOrtu =  pathArray[0].split('=');
+  var NamaAnak =  pathArray[1].split('=');
   document.getElementById("demo1").innerHTML = newURL;
   
-document.getElementById("demo").innerHTML = pathArray;
-document.getElementById("demo2").innerHTML = pathArray2;
-document.getElementById("demo3").innerHTML = pathArray3;
-document.getElementById("demo4").innerHTML = pathArray4[1];
+document.getElementById("NamaOrtu").innerHTML = NamaOrtu[1];
+document.getElementById("NamaAnak").innerHTML = NamaAnak[1];
 </script>
