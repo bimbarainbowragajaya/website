@@ -39,13 +39,13 @@
                 <td>1.</td>
                 <td width="30%">Nama Lengkap</td>
                 <td width="1%">:</td>
-                <td colspan="4" width="70%"><div id="NamaAnak"></div></td>
+                <td colspan="4" width="70%"><div id="NamaLengkapSiswa"></div></td>
             </tr> 
              <tr>
                 <td>2.</td>
                 <td>Nama Panggilan</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="NamaPanggilanSiswa"></div></td>
             </tr> 
             <tr>
                 <td>3.</td>
@@ -330,11 +330,11 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var newURL = window.location.protocol + "/" + window.location.host + "/" + window.location.pathname + window.location.search
   var pathArray =  window.location.search.split('&');
   var NamaLengkapSiswa =  pathArray[0].split('=');
-  var NamaPanggilan =  pathArray[1].split('=');
+  var NamaPanggilanSiswa =  pathArray[1].split('=');
   <!-- var EmailV =  Email[1].replace('%40','@'); -->
   
 document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswa[1];
-document.getElementById("NamaPanggilan").innerHTML = NamaPanggilan[1];
+document.getElementById("NamaPanggilanSiswa").innerHTML = NamaPanggilanSiswa[1];
 </script>
   
   
