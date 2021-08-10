@@ -326,23 +326,15 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
             </tr> 
         </table>
         
-        
-<p id="NamaOrtu"></p>
-<p id="Email"></p>
-<p id="Phone"></p>
 <script>
   var newURL = window.location.protocol + "/" + window.location.host + "/" + window.location.pathname + window.location.search
   var pathArray =  window.location.search.split('&');
-  var NamaOrtu =  pathArray[0].split('=');
-  var NamaAnak =  pathArray[1].split('=');
-  var Email =  pathArray[2].split('=');
-  var EmailV =  Email[1].replace('%40','@');
-  var Phone =  pathArray[3].split('=');
+  var NamaLengkapSiswa =  pathArray[0].split('=');
+  var NamaPanggilan =  pathArray[1].split('=');
+  <!-- var EmailV =  Email[1].replace('%40','@'); -->
   
-document.getElementById("NamaOrtu").innerHTML = NamaOrtu[1];
-document.getElementById("NamaAnak").innerHTML = NamaAnak[1];
-document.getElementById("Email").innerHTML = EmailV;
-document.getElementById("Phone").innerHTML = Phone[1];
+document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswa[1];
+document.getElementById("NamaPanggilan").innerHTML = NamaPanggilan[1];
 </script>
   
   
