@@ -9,7 +9,7 @@ mmmm
   var NamaOrtu =  pathArray[0].split('=');
   var NamaAnak =  pathArray[1].split('=');
   var Email =  pathArray[2].split('=');
-  var EmailV =  Email[1].substring(0, Email[1].lastIndexOf('%40') + 1) 
+  var EmailV =  Email[1].substring('@', Email[1].lastIndexOf('%40') + 1) 
   var Phone =  pathArray[3].split('=');
   
 document.getElementById("NamaOrtu").innerHTML = NamaOrtu[1];
