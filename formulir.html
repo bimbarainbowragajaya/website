@@ -2,19 +2,17 @@
 <p id="NamaAnak"></p>
 <p id="Email"></p>
 <p id="Phone"></p>
-<p id="EmailV"></p>
 <script>
   var newURL = window.location.protocol + "/" + window.location.host + "/" + window.location.pathname + window.location.search
   var pathArray =  window.location.search.split('&');
   var NamaOrtu =  pathArray[0].split('=');
   var NamaAnak =  pathArray[1].split('=');
   var Email =  pathArray[2].split('=');
-  var EmailV =  Email.split('%40');
+  var EmailV =  Email[1].split('%40')[@];
   var Phone =  pathArray[3].split('=');
   
 document.getElementById("NamaOrtu").innerHTML = NamaOrtu[1];
 document.getElementById("NamaAnak").innerHTML = NamaAnak[1];
-document.getElementById("Email").innerHTML = Email[1];
+document.getElementById("Email").innerHTML = EmailV;
 document.getElementById("Phone").innerHTML = Phone[1];
-document.getElementById("EmailV").innerHTML = EmailV;
 </script>
