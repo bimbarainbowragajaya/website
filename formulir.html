@@ -126,7 +126,7 @@
                 <td>4.</td>
                 <td>Pekerjaaan</td>
                 <td>:</td>
-                <td colspan="4" ></td>
+                <td colspan="4" ><div id="PekerjaanAyah"></div></td>
             </tr> 
             <tr>
                 <td>5.</td>
@@ -348,6 +348,8 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var TempatTanggalLahirAyah1 =  TempatTanggalLahirAyah[1].replace('%2C+',', ');  
   var TempatTanggalLahirAyah2 =  TempatTanggalLahirAyah1.split('+'); 
   var PendidikanTerakhirAyah =  pathArray[12].split('=');
+  var PekerjaanAyah =  pathArray[13].split('=');
+    
     
   
 document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswaV;
@@ -363,6 +365,7 @@ document.getElementById("ObatSiswa").innerHTML = ObatSiswa[1];
 document.getElementById("NamaLengkapAyah").innerHTML = NamaLengkapAyah[1];
 document.getElementById("TempatTanggalLahirAyah").innerHTML = TempatTanggalLahirAyah2[0] + ' ' + TempatTanggalLahirAyah2[1] + ' ' + TempatTanggalLahirAyah2[2];
 document.getElementById("PendidikanTerakhirAyah").innerHTML = PendidikanTerakhirAyah[1];
+document.getElementById("PekerjaanAyah").innerHTML = PekerjaanAyah[1];
 
     
     
