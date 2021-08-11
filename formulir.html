@@ -51,7 +51,7 @@
                 <td>3.</td>
                 <td>Tempat/Tanggal Lahir</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="TempatTanggalLahirSiswa"></div></td>
             </tr> 
             <tr>
                 <td>4.</td>
@@ -332,9 +332,12 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var NamaLengkapSiswa =  pathArray[0].split('=');
   var NamaLengkapSiswaV =  NamaLengkapSiswa[1].replace('+',' ');  
   var NamaPanggilanSiswa =  pathArray[1].split('=');
+  var TempatTanggalLahirSiswa =  pathArray[2].split('=');
+    
   
 document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswaV;
 document.getElementById("NamaPanggilanSiswa").innerHTML = NamaPanggilanSiswa[1];
+document.getElementById("TempatTanggalLahirSiswa").innerHTML = TempatTanggalLahirSiswa[1];
 </script>
   
   
