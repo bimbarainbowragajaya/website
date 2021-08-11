@@ -333,12 +333,14 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var NamaLengkapSiswaV =  NamaLengkapSiswa[1].replace('+',' ');  
   var NamaPanggilanSiswa =  pathArray[1].split('=');
   var TempatTanggalLahirSiswa =  pathArray[2].split('=');
-  var TempatTanggalLahirSiswaV =  TempatTanggalLahirSiswa[1].replace('%2C+',' ');  
+  var TempatTanggalLahirSiswa1 =  TempatTanggalLahirSiswa[1].replace('%2C+',' ');  
+    
+  var TempatTanggalLahirSiswa2 =  TempatTanggalLahirSiswa1.split('+');  
     
   
 document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswaV;
 document.getElementById("NamaPanggilanSiswa").innerHTML = NamaPanggilanSiswa[1];
-document.getElementById("TempatTanggalLahirSiswa").innerHTML = TempatTanggalLahirSiswaV;
+document.getElementById("TempatTanggalLahirSiswa").innerHTML = TempatTanggalLahirSiswa2[0] + TempatTanggalLahirSiswa2[1] ;
 </script>
   
   
