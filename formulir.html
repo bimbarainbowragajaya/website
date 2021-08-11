@@ -138,7 +138,7 @@
                 <td></td>
                 <td></td>
                 <td></td>
-                <td colspan="4"></td>
+                <td colspan="4"> </td>
             </tr> 
             <tr>
                 <td></td>
@@ -150,7 +150,7 @@
                 <td>6.</td>
                 <td>No Telp/ Hp</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="HpAyah"></div> </td>
             </tr> 
             <tr>
                 <td colspan="7">&nbsp;</td>
@@ -162,31 +162,31 @@
                 <td>1.</td>
                 <td>Nama Lengkap</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="NamaLengkapIbu"></div></td>
             </tr> 
             <tr>
                 <td>2.</td>
                 <td>Tempat/Tanggal Lahir</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="TempatTanggalLahirIbu"></td>
             </tr>
             <tr>
                 <td>3.</td>
                 <td>Pendidikan Terakhir</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="PendidikanTerakhirIbu"> </td>
             </tr>
             <tr>
                 <td>4.</td>
                 <td>Pekerjaaan</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="PekerjaanIbu"></div></td>
             </tr> 
             <tr>
                 <td>5.</td>
                 <td>Alamat Tempat Tinggal</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="AlamatTempatTinggalIbu"></div></td>
             </tr> 
             <tr>
                 <td></td>
@@ -204,7 +204,7 @@
                 <td>6.</td>
                 <td>No Telp/ Hp</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="HpIbu"></div> </td>
             </tr> 
         </table>
         </fieldset>
@@ -352,8 +352,18 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var AlamatTempatTinggalAyah =  pathArray[14].split('=');
   var AlamatTempatTinggalAyah1 =  AlamatTempatTinggalAyah[1].replace('%2C+',', ');  
   var AlamatTempatTinggalAyah2 =  AlamatTempatTinggalAyah1.split('+'); 
+  var HpAyah =  pathArray[15].split('=');
+  var NamaLengkapIbu =  pathArray[10].split('=');
+  var TempatTanggalLahirIbu =  pathArray[16].split('=');
+  var TempatTanggalLahirIbu1 =  TempatTanggalLahirIbu[1].replace('%2C+',', ');  
+  var TempatTanggalLahirIbh2 =  TempatTanggalLahirIbu1.split('+'); 
+  var PendidikanTerakhirIbu =  pathArray[17].split('=');
+  var PekerjaanIbu =  pathArray[13].split('=');
+  var AlamatTempatTinggalIbu =  pathArray[18].split('=');
+  var AlamatTempatTinggalIbu1 =  AlamatTempatTinggalIbu[1].replace('%2C+',', ');  
+  var AlamatTempatTinggalIbu2 =  AlamatTempatTinggalIbu1.split('+'); 
+  var HpIbu =  pathArray[19].split('=');
     
-  
 document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswaV;
 document.getElementById("NamaPanggilanSiswa").innerHTML = NamaPanggilanSiswa[1];
 document.getElementById("TempatTanggalLahirSiswa").innerHTML = TempatTanggalLahirSiswa2[0] + ' ' + TempatTanggalLahirSiswa2[1] + ' ' + TempatTanggalLahirSiswa2[2];
@@ -369,7 +379,15 @@ document.getElementById("TempatTanggalLahirAyah").innerHTML = TempatTanggalLahir
 document.getElementById("PendidikanTerakhirAyah").innerHTML = PendidikanTerakhirAyah[1];
 document.getElementById("PekerjaanAyah").innerHTML = PekerjaanAyah[1];
 document.getElementById("AlamatTempatTinggalAyah").innerHTML = AlamatTempatTinggalAyah2[0] + ' ' + AlamatTempatTinggalAyah2[1] + ' ' + AlamatTempatTinggalAyah2[2];
-    
+document.getElementById("HpAyah").innerHTML = HpAyah[1];
+
+document.getElementById("NamaLengkapIbu").innerHTML = NamaLengkapIbu[1];
+document.getElementById("TempatTanggalLahirIbu").innerHTML = TempatTanggalLahirIbu2[0] + ' ' + TempatTanggalLahirIbu2[1] + ' ' + TempatTanggalLahirIbu2[2];
+document.getElementById("PendidikanTerakhirIbu").innerHTML = PendidikanTerakhirIbu[1];
+document.getElementById("PekerjaanIbu").innerHTML = PekerjaanIbu[1];
+document.getElementById("AlamatTempatTinggalIbu").innerHTML = AlamatTempatTinggalIbu2[0] + ' ' + AlamatTempatTinggalIbu2[1] + ' ' + AlamatTempatTinggalIbu2[2];
+document.getElementById("HpIbu").innerHTML = HpIbu[1];
+
     
 </script>
   
