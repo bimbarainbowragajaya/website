@@ -223,37 +223,37 @@
                 <td>1.</td>
                 <td width="60%">Apakah siswa pernah mengikuti les membaca sebelumnya</td>
                 <td>:</td>
-                <td width="40%"></td>
+                <td width="40%"><div id="TempatBacaSebelumnya"></div> </td>
             </tr> 
              <tr>
                 <td>2.</td>
                 <td>Jika iya, dilembaga mana siswa mengikuti les tersebut</td>
                 <td>:</td>
-                <td></td>
+                <td><div id="LembagaSebelumnya"></div> </td>
             </tr> 
             <tr>
                 <td>3.</td>
                 <td>Terakhir siswa mengikuti les sampai level</td>
                 <td>:</td>
-                <td></td>
+                <td><div id="LevelTerakhir"></div></td>
             </tr> 
             <tr>
                 <td>4.</td>
                 <td>Alasan siswa keluar/tidak melanjutkan les</td>
                 <td>:</td>
-                <td></td>
+                <td><div id="AlasanKeluar"></div> </td>
             </tr> 
             <tr>
                 <td>5.</td>
                 <td>Dari mana anda mengenal Rainbow Kids</td>
                 <td>:</td>
-                <td></td>
+                <td><div id="InfoBimba"></div></td>
             </tr> 
             <tr>
                 <td>6.</td>
                 <td>Alasan memilih Rainbow kids</td>
                 <td>:</td>
-                <td></td>
+                <td><div id="AlasanMemilihBimba"></div></td>
             </tr> 
         </table>
         </fieldset>
@@ -363,6 +363,14 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var AlamatTempatTinggalIbu1 =  AlamatTempatTinggalIbu[1].replace('%2C+',', ');  
   var AlamatTempatTinggalIbu2 =  AlamatTempatTinggalIbu1.split('+'); 
   var HpIbu =  pathArray[21].split('=');
+  var TempatBacaSebelumnya =  pathArray[22].split('=');
+  var LembagaSebelumnya =  pathArray[23].split('=');
+  var LevelTerakhir =  pathArray[24].split('=');
+  var AlasanKeluar =  pathArray[25].split('=');
+  var InfoBimba =  pathArray[26].split('=');
+  var AlasanMemilihBimba =  pathArray[27].split('=');
+
+
     
 document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswaV;
 document.getElementById("NamaPanggilanSiswa").innerHTML = NamaPanggilanSiswa[1];
@@ -386,7 +394,12 @@ document.getElementById("PendidikanTerakhirIbu").innerHTML = PendidikanTerakhirI
 document.getElementById("PekerjaanIbu").innerHTML = PekerjaanIbu[1];
 document.getElementById("AlamatTempatTinggalIbu").innerHTML = AlamatTempatTinggalIbu2[0] + ' ' + AlamatTempatTinggalIbu2[1] + ' ' + AlamatTempatTinggalIbu2[2];
 document.getElementById("HpIbu").innerHTML = HpIbu[1];
-
+document.getElementById("TempatBacaSebelumnya").innerHTML = TempatBacaSebelumnya[1];
+document.getElementById("LembagaSebelumnya").innerHTML = LembagaSebelumnya[1];
+document.getElementById("LevelTerakhir").innerHTML = LevelTerakhir[1];
+document.getElementById("AlasanKeluar").innerHTML = AlasanKeluar[1];
+document.getElementById("InfoBimba").innerHTML = InfoBimba[1];
+document.getElementById("AlasanMemilihBimba").innerHTML = AlasanMemilihBimba[1];
     
 </script>
   
