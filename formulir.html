@@ -57,43 +57,43 @@
                 <td>4.</td>
                 <td>Jenis Kelamin</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="AsalSekolahSiswa"></div></td>
             </tr> 
             <tr>
                 <td>5.</td>
                 <td>Asal Sekolah</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="AsalSekolahSiswa"></div></td>
             </tr> 
             <tr>
                 <td>6.</td>
                 <td>Anak ke</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="AsalSekolahSiswa"></div></td>
             </tr> 
             <tr>
                 <td>7.</td>
                 <td>Hobi</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="HobiSiswa"></div></td>
             </tr> 
             <tr>
                 <td>8.</td>
                 <td>Agama</td>
                 <td>:</td>
-                <td colspan="4"></td>
+                <td colspan="4"><div id="AgamaSiswa"></div></td>
             </tr> 
             <tr>
                 <td>9.</td>
                 <td colspan="4" >Apakah Siswa memiliki riwayat sakit tertentu/kambuhan</td>
                 <td width="1%" >:</td>
-                <td width="40%"></td>
+                <td width="40%"><div id="RiwayatSakitSiswa"></div></td>
             </tr> 
             <tr>
                 <td>10.</td>
                 <td colspan="4" >Apakah Siswa mengkonsumsi obat tertentu secara rutin</td>
                 <td width="1%">:</td>
-                <td width="40%"></td>
+                <td width="40%"><div id="ObatSiswa"></div></td>
             </tr> 
             <tr>
                 <td colspan="7">&nbsp;</td>
@@ -108,13 +108,13 @@
                 <td>1.</td>
                 <td>Nama Lengkap</td>
                 <td>:</td>
-                <td colspan="4" ></td>
+                <td colspan="4" ><div id="NamaLengkapAyah"></div></td>
             </tr> 
             <tr>
                 <td>2.</td>
                 <td>Tempat/Tanggal Lahir</td>
                 <td>:</td>
-                <td colspan="4" ></td>
+                <td colspan="4" ><div id="TempatTanggalLahirAyah"></div></td>
             </tr>
             <tr>
                 <td>3.</td>
@@ -333,14 +333,47 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var NamaLengkapSiswaV =  NamaLengkapSiswa[1].replace('+',' ');  
   var NamaPanggilanSiswa =  pathArray[1].split('=');
   var TempatTanggalLahirSiswa =  pathArray[2].split('=');
-  var TempatTanggalLahirSiswa1 =  TempatTanggalLahirSiswa[1].replace('%2C+',',');  
+  var TempatTanggalLahirSiswa1 =  TempatTanggalLahirSiswa[1].replace('%2C+',', ');  
+  var TempatTanggalLahirSiswa2 =  TempatTanggalLahirSiswa1.split('+'); 
+  var JenisKelaminSiswa =  pathArray[3].split('=');
+  var JenisKelaminSiswaV =  JenisKelaminSiswa[1].replace('++','-');  
+  var AsalSekolahSiswa =  pathArray[4].split('=');
+  var AnakKeSiswa =  pathArray[5].split('=');  
+  var HobiSiswa =  pathArray[6].split('=');  
+  var AgamaSiswa =  pathArray[7].split('='); 
+  var RiwayatSakitSiswa =  pathArray[8].split('=');
+  var ObatSiswa =  pathArray[9].split('=');
+  var NamaLengkapAyah =  pathArray[10].split('=');
+  var TempatTanggalLahirAyah =  pathArray[11].split('=');
+  
+  var TempatTanggalLahirAyah1 =  TempatTanggalLahirAyah[1].replace('%2C+',', ');  
+  var TempatTanggalLahirAyah2 =  TempatTanggalLahirAyah1.split('+'); 
     
-  var TempatTanggalLahirSiswa2 =  TempatTanggalLahirSiswa1.split('+');  
+    
+  
+    
+    
+    
+    
+    
+    
     
   
 document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswaV;
 document.getElementById("NamaPanggilanSiswa").innerHTML = NamaPanggilanSiswa[1];
 document.getElementById("TempatTanggalLahirSiswa").innerHTML = TempatTanggalLahirSiswa2[0] + ' ' + TempatTanggalLahirSiswa2[1] + ' ' + TempatTanggalLahirSiswa2[2];
+document.getElementById("JenisKelaminSiswa").innerHTML = JenisKelaminSiswaV;
+document.getElementById("AsalSekolahSiswa").innerHTML = AsalSekolahSiswa;
+document.getElementById("AnakKeSiswa").innerHTML = AnakKeSiswa;
+document.getElementById("HobiSiswa").innerHTML = HobiSiswa;
+document.getElementById("AgamaSiswa").innerHTML = AgamaSiswa;
+document.getElementById("RiwayatSakitSiswa").innerHTML = RiwayatSakitSiswa;
+document.getElementById("ObatSiswa").innerHTML = ObatSiswa;
+document.getElementById("NamaLengkapAyah").innerHTML = NamaLengkapAyah;
+document.getElementById("TempatTanggalLahirAyah").innerHTML = TempatTanggalLahirAyah2[0] + ' ' + TempatTanggalLahirAyah2[1] + ' ' + TempatTanggalLahirAyah2[2];
+
+    
+    
 </script>
   
   
