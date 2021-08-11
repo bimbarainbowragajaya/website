@@ -350,8 +350,8 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var PendidikanTerakhirAyah =  pathArray[12].split('=');
   var PekerjaanAyah =  pathArray[13].split('=');
   var AlamatTempatTinggalAyah =  pathArray[14].split('=');
-
-    
+  var AlamatTempatTinggalAyah1 =  AlamatTempatTinggalAyah[1].replace('%2C+',', ');  
+  var AlamatTempatTinggalAyah2 =  AlamatTempatTinggalAyah1.split('+'); 
     
   
 document.getElementById("NamaLengkapSiswa").innerHTML = NamaLengkapSiswaV;
@@ -368,7 +368,7 @@ document.getElementById("NamaLengkapAyah").innerHTML = NamaLengkapAyah[1];
 document.getElementById("TempatTanggalLahirAyah").innerHTML = TempatTanggalLahirAyah2[0] + ' ' + TempatTanggalLahirAyah2[1] + ' ' + TempatTanggalLahirAyah2[2];
 document.getElementById("PendidikanTerakhirAyah").innerHTML = PendidikanTerakhirAyah[1];
 document.getElementById("PekerjaanAyah").innerHTML = PekerjaanAyah[1];
-document.getElementById("AlamatTempatTinggalAyah").innerHTML = AlamatTempatTinggalAyah[1];
+document.getElementById("AlamatTempatTinggalAyah").innerHTML = AlamatTempatTinggalAyah2[0] + ' ' + AlamatTempatTinggalAyah2[1] + ' ' + AlamatTempatTinggalAyah2[2];
     
     
 </script>
