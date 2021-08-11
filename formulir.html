@@ -132,7 +132,7 @@
                 <td>5.</td>
                 <td>Alamat Tempat Tinggal</td>
                 <td>:</td>
-                <td colspan="4" ></td>
+                <td colspan="4" ><div id="AlamatTempatTinggalAyah"></div></td>
             </tr> 
             <tr>
                 <td></td>
@@ -349,6 +349,8 @@ Saya selaku orang Tua/Wali Murid dengan ini menyepakati ketentuan yang telah di 
   var TempatTanggalLahirAyah2 =  TempatTanggalLahirAyah1.split('+'); 
   var PendidikanTerakhirAyah =  pathArray[12].split('=');
   var PekerjaanAyah =  pathArray[13].split('=');
+  var AlamatTempatTinggalAyah =  pathArray[14].split('=');
+
     
     
   
@@ -366,7 +368,7 @@ document.getElementById("NamaLengkapAyah").innerHTML = NamaLengkapAyah[1];
 document.getElementById("TempatTanggalLahirAyah").innerHTML = TempatTanggalLahirAyah2[0] + ' ' + TempatTanggalLahirAyah2[1] + ' ' + TempatTanggalLahirAyah2[2];
 document.getElementById("PendidikanTerakhirAyah").innerHTML = PendidikanTerakhirAyah[1];
 document.getElementById("PekerjaanAyah").innerHTML = PekerjaanAyah[1];
-
+document.getElementById("AlamatTempatTinggalAyah").innerHTML = AlamatTempatTinggalAyah[1];
     
     
 </script>
